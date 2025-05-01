@@ -1,12 +1,12 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace RentAPIWebApp.Models
 {
     public class Users
     {
         public int Id { get; set; }
-        [Required(ErrorMessage ="Поле не повинно бути порожнім")]
-        [Display(Name ="Повне ім'я")]
+        [Required(ErrorMessage = "Поле не повинно бути порожнім")]
+        [Display(Name = "Повне ім'я")]
         public string UsrName { get; set; }
         [Required(ErrorMessage = "Поле не повинно бути порожнім")]
         [Display(Name = "Електронна пошта")]
