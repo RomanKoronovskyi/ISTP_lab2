@@ -1,4 +1,4 @@
-﻿using System.ComponentModel.DataAnnotations;
+using System.ComponentModel.DataAnnotations;
 
 namespace RentAPIWebApp.Models
 {
@@ -18,8 +18,7 @@ namespace RentAPIWebApp.Models
         [Display(Name = "Ціна")]
         public decimal FlPrice { get; set; }
 
-        public int DsId { get; set; }
-        public virtual Districts Districts { get; set; }
+        public virtual Districts Ds { get; set; }
 
         public virtual ICollection<Favourites> Favourites { get; set; } = new List<Favourites>();
     }
